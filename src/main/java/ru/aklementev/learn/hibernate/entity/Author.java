@@ -10,16 +10,16 @@ import javax.persistence.Id;
 import java.io.Serializable;
 
 @Entity
-@Setter @Getter
+@Getter
 public class Author implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // Генерация ID через автоинкремент
     private String id;
 
+    @Setter
     private String name;
 
-
-
+    private String second_name;
 
 }
